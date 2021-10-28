@@ -65,8 +65,12 @@ header {
     align-items: center;
     /*transition: transform .3s ease-in-out;
     */
-    transform: translate(110%);
+    transform: translate(100%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    -webkit-transform: translate(100%);
+    -moz-transform: translate(100%);
+    -ms-transform: translate(100%);
+    -o-transform: translate(100%);
 }
 
 .spread {
@@ -165,12 +169,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(100%);
+    transform: translate(00%);
     transition: .2s ease-in-out;
     -webkit-transform: translate(100%);
-    -moz-transform: translate(100%);
-    -ms-transform: translate(100%);
-    -o-transform: translate(100%);
+    -moz-transform: translate(00%);
+    -ms-transform: translate(00%);
+    -o-transform: translate(00%);
 }
 
 .show {
@@ -181,12 +185,12 @@ header {
     object-fit: cover;
     width: 60%;
     border-radius: 10px;
-    transform: scale(0);
+    transform: scale(1);
     transition: transform .3s .2s;
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
 .showImage {
@@ -334,5 +338,18 @@ footer {
         text-align: center;
         width: 80%;
         margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .menu-navegacion {
+        width: 65vw;
+    }
+    .agregar-imagen {
+        width: 95%;
+    }
+    .hamburguer {
+        top: 20px;
+        right: 20px;
     }
 }

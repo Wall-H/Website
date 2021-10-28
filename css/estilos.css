@@ -48,10 +48,10 @@ header {
     height: 40px;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0   0   6px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.menu-navegacion{
+.menu-navegacion {
     position: fixed;
     top: 0;
     right: 0;
@@ -67,29 +67,29 @@ header {
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.spread{
+.spread {
     transform: translate()
 }
 
-.menu-navegacion a{
-    color:#fff;
+.menu-navegacion a {
+    color: #fff;
     text-decoration: ;
 }
 
-.titulo{
+.titulo {
     font-size: 60px;
     margin-bottom: 15px;
 }
 
-.copy{
+.copy {
     font-weight: 300;
     font-size: 25px;
-
 }
+
 
 /* BREVE RESUMEN */
 
-.subtitulo{
+.subtitulo {
     text-align: center;
     font-weight: 300;
     color: #9f8ad0;
@@ -97,36 +97,36 @@ header {
     font-size: 40px;
 }
 
-.contenedor-resumen{
+.contenedor-resumen {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.contenedor-resumen img{
+.contenedor-resumen img {
     width: 40%;
 }
 
-.lista-resumen{
+.lista-resumen {
     width: 45%;
 }
 
-.resumen{
+.resumen {
     margin-bottom: 20px;
 }
 
-.n-resumen{
+.n-resumen {
     margin-bottom: 7px;
     color: 9f8ad0;
 }
 
-.number{
+.number {
     display: inline-block;
     background-image: linear-gradient(120deg, rgb(132, 250, 175) 0%, rgb(143, 210, 244) 100%);
     width: 30px;
     height: 30px;
-    color:#fff;
+    color: #fff;
     text-align: center;
     border-radius: 50%;
     font-weight: 700;
@@ -134,28 +134,27 @@ header {
     margin-right: 5px;
 }
 
-.gallery{
+.gallery {
     background: #f2f2f2;
 }
 
-.contenedor-galeria{
+.contenedor-galeria {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.img-galeria{
+.img-galeria {
     width: 30%;
     display: block;
     margin-bottom: 15px;
-    box-shadow: 0   0   6px rgba(0, 0,  .5);
+    box-shadow: 0 0 6px rgba(0, 0, .5);
     cursor: pointer;
 }
 
-
-.imagen-light{
+.imagen-light {
     position: fixed;
-    background: rgba(0,  0,  0, .5);
+    background: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
     top: 0;
@@ -163,15 +162,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transform: translate(100%);
+    transition: .2s ease-in-out;
 }
 
-.agregar-imagen{
+.show {
+    transform: translate(0);
+}
+
+.agregar-imagen {
     width: 60%;
     border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
 }
 
-.showImage{}
+.showImage {
+    transform: scale(1);
+}
 
 .close {
     position: absolute;
@@ -179,4 +187,8 @@ header {
     right: 15px;
     width: 40px;
     cursor: pointer;
+}
+
+.nostro {
+    display: flex;
 }

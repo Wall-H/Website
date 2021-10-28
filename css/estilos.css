@@ -67,7 +67,7 @@ header {
     */
     transform: translate(100%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-    -webkit-transform: translate(100%);
+    -webkit-transform: translate(110%);
     -moz-transform: translate(100%);
     -ms-transform: translate(100%);
     -o-transform: translate(100%);
@@ -331,6 +331,9 @@ footer {
         width: 80%;
         justify-content: space-evenly;
     }
+    .social-media-icon {
+        margin-left: 0;
+    }
     .social-media i {
         margin-left: 0;
     }
@@ -345,11 +348,26 @@ footer {
     .menu-navegacion {
         width: 65vw;
     }
-    .agregar-imagen {
-        width: 95%;
-    }
     .hamburguer {
         top: 20px;
         right: 20px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .subtitulo {
+        font-size: 30px;
+    }
+    .agregar-imagen {
+        width: 95%;
+    }
+    .img-galeria {
+        width: 95%;
+    }
+    .social-media {
+        width: 100%;
+    }
+    .contact-us {
+        width: 90%;
     }
 }

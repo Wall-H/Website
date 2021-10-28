@@ -42,7 +42,6 @@ header {
 
 .hamburguer {
     position: fixed;
-    z-index: 10;
     top: 30px;
     right: 30px;
     background: white;
